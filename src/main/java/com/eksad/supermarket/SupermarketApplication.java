@@ -15,7 +15,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.eksad.supermarket.config.FunctionPaging;
+
 import com.eksad.supermarket.dao.BrandDao;
 import com.eksad.supermarket.dao.CashierDAO;
 import com.eksad.supermarket.dao.CustomerDAO;
@@ -64,15 +64,14 @@ public class SupermarketApplication  implements ApplicationRunner { // menandaka
 	
 	@Autowired
 	private ProductGroceryDAO productGroceryDAO;
-	@Autowired
-	private FunctionPaging functionPaging;
+
 	@Override
 	//@Transactional
 	public void run(ApplicationArguments args) throws Exception {
 		// TODO Auto-generated method stub
 
 		
-		functionPaging.PaggingPersonFindAll();
+
 		
 //		Page<Person> page = personDao.findAll(PageRequest.of(2, 10, Sort.by("name")));
 //		
